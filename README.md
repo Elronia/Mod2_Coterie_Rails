@@ -60,7 +60,7 @@ The word *Coterie* means a small group of people with shared interests or tastes
  * Custom CSS
 
 ## Build Status
- * This project was completed in 6 days for the purpose of the project presentation.
+ * This project was completed in 5 days for the purpose of the project presentation.
 
 ## Future Features
  * Improve design elements (look of buttons, background image, text manipulation)
