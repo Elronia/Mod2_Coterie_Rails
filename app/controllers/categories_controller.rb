@@ -8,6 +8,10 @@ class CategoriesController < ApplicationController
         @meetings = Meeting.all
     end
 
+    def show
+        @category = Category.find(params[:id])
+    end
+
 
 
 end
