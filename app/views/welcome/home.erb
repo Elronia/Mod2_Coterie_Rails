@@ -9,29 +9,60 @@
             <h2>🔎 Browse Popular Categories  </h2>
             <div class="row flex" style="width: 100%; height: 200px;">
                 <div class="col-md-3 box art">
-                    <%= link_to 'Arts & Culture', categories_path(1) %>
+                    <%= link_to 'Arts & Culture', category_path(1) %>
                 </div>
-                <div class="col-md-3 box book"><span>Book Clubs</span></div>
-                <div class="col-md-3 box career"><span>Career & Business</span></div>
-                <div class="col-md-3 box education"><span>Education & Learning</span></div>
+                <div class="col-md-3 box book">
+                    <%= link_to 'Book Clubs', category_path(2) %>
+                </div>
+                <div class="col-md-3 box career">
+                    <%= link_to 'Career & Business', category_path(3) %>
+                </div>
+                <div class="col-md-3 box education">
+                    <%= link_to 'Education & Learning', category_path(4) %>
+                </div>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box fashion"><span>Fashion & Beauty</span></div>
-                <div class="col-md-3 box food"><span>Food & Drink</span></div>
-                <div class="col-md-3 box game"><span>Games</span></div>
-                <div class="col-md-3 box health"><span>Health & Wellbeing</span></div>
+                <div class="col-md-3 box fashion">
+                    <%= link_to 'Fashion & Beauty', category_path(5) %>
+                </div>
+                <div class="col-md-3 box food">
+                    <%= link_to 'Food & Drink', category_path(6) %>
+                </div>
+                <div class="col-md-3 box game">
+                    <%= link_to 'Games', category_path(7) %>
+                </div>
+                <div class="col-md-3 box health">
+                    <%= link_to 'Health & Wellbeing', category_path(8) %>
+                </div>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box hobbie"><span>Hobbies & Crafts</span></div>
-                <div class="col-md-3 box lgbt"><span>LGBT</span></div>
-                <div class="col-md-3 box language"><span>Lang & Ethnic Identity</span></div>
-                <div class="col-md-3 box politics"><span>Movements & Politics</span></div>
+                <div class="col-md-3 box hobbie">
+                    <%= link_to 'Hobbies & Crafts', category_path(9) %>
+                </div>
+                <div class="col-md-3 box lgbt">
+                    <%= link_to 'LGBT', category_path(10) %>
+                </div>
+                <div class="col-md-3 box language">
+                    <%= link_to 'Lang & Ethnic Identity', category_path(11) %>
+                </div>
+                <div class="col-md-3 box politics">
+                    <%= link_to 'Movements & Politics', category_path(12) %>
+                </div>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box movie"><span>Movies & Film</span></div>
-                <div class="col-md-3 box music"><span>Music</span></div>
-                <div class="col-md-3 box outdoor"><span>Outdoor Adventure</span></div>
-                <div class="col-md-3 box parent"><span>Parents & Family</span></div>
+                <div class="col-md-3 box movie">
+                    <%= link_to 'Movies & Film', category_path(13) %>
+                </div>
+                <div class="col-md-3 box music">
+                    <span>Music</span>
+                    <%= link_to 'Music', category_path(14) %>
+                </div>
+                <div class="col-md-3 box outdoor">
+                    <%= link_to 'Outdoor Adventure', category_path(15) %>
+                </div>
+                <div class="col-md-3 box parent">
+                    <%= link_to 'Parents & Family', category_path(16) %>
+                </div>
             </div>
         </div>
         
