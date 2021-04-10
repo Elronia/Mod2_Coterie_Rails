@@ -15,64 +15,117 @@
                         </div>
                     </div>
                 <% end %>
-                <div class="col-md-3 box-container">
-                    <div class="box book">
-                        <%= link_to 'Book Clubs', category_path(2) %>
+                <%= link_to category_path(2) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box book">
+                            <span>Book Clubs</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 box-container">
-                    <div class="box career">
-                        <%= link_to 'Career & Business', category_path(3) %>
+                <% end %>
+                <%= link_to category_path(3) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box career">
+                            <span>Career & Business</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 box-container">
-                    <div class="box education">
-                        <%= link_to 'Education & Learning', category_path(4) %>
+                <% end %>
+                <%= link_to category_path(4) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box education">
+                            <span>Education & Learning</span>
+                        </div>
                     </div>
-                </div>
+                <% end %>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box fashion">
-                    <%= link_to 'Fashion & Beauty', category_path(5) %>
-                </div>
-                <div class="col-md-3 box food">
-                    <%= link_to 'Food & Drink', category_path(6) %>
-                </div>
-                <div class="col-md-3 box game">
-                    <%= link_to 'Games', category_path(7) %>
-                </div>
-                <div class="col-md-3 box health">
-                    <%= link_to 'Health & Wellbeing', category_path(8) %>
-                </div>
+                <%= link_to category_path(5) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box fashion">
+                            <span>Fashion & Beauty</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(6) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box food">
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(7) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box game">
+                            <span>Games</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(8) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box health">
+                            <span>Health & Wellbeing</span>
+                        </div>
+                    </div>
+                <% end %>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box hobbie">
-                    <%= link_to 'Hobbies & Crafts', category_path(9) %>
-                </div>
-                <div class="col-md-3 box lgbt">
-                    <%= link_to 'LGBT', category_path(10) %>
-                </div>
-                <div class="col-md-3 box language">
-                    <%= link_to 'Lang & Ethnic Identity', category_path(11) %>
-                </div>
-                <div class="col-md-3 box politics">
-                    <%= link_to 'Movements & Politics', category_path(12) %>
-                </div>
+                <%= link_to category_path(9) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box hobbie">
+                            <span>Hobbies & Crafts</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(10) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box lgbt">
+                            <span>LGBT</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(11) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box language">
+                            <span>Lang & Ethnic Identity</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(12) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box politics">
+                            <span>Movements & Politics</span>
+                        </div>
+                    </div>
+                <% end %>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box movie">
-                    <%= link_to 'Movies & Film', category_path(13) %>
-                </div>
-                <div class="col-md-3 box music">
-                    <span>Music</span>
-                    <%= link_to 'Music', category_path(14) %>
-                </div>
-                <div class="col-md-3 box outdoor">
-                    <%= link_to 'Outdoor Adventure', category_path(15) %>
-                </div>
-                <div class="col-md-3 box parent">
-                    <%= link_to 'Parents & Family', category_path(16) %>
-                </div>
+                <%= link_to category_path(13) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box movie">
+                            <span>Movies & Film</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(14) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box music">
+                            <span>Music</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(15) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box outdoor">
+                            <span>Outdoor Adventure</span>
+                        </div>
+                    </div>
+                <% end %>
+                <%= link_to category_path(16) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box parent">
+                            <span>Parents & Family</span>
+                        </div>
+                    </div>
+                <% end %>
             </div>
         </div>
         
