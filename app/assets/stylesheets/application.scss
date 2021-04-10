@@ -29,6 +29,10 @@ h2 {
     color: inherit;
 }
 
+a {
+    color: #B1A29B;
+}
+
 
 body {
     font-family: Arial;
@@ -78,7 +82,16 @@ ul {
 
 .user-btn {
     height: 40px;
-    width: 250px;
+    font-size: 18px;
+    max-width: 505px;
+}
+
+.meeting-show {
+    font-size: 18px;
+
+    a.btn {
+        font-size: 18px;
+    }
 }
 
 .height-45 {
@@ -87,6 +100,10 @@ ul {
 
 p.meeting-none {
     font-size: 20px;
+}
+
+#new_meeting, #new_meeting select, #new_meeting input, #new_meeting textarea {
+    font-size: 18px;
 }
 
 .box {
@@ -247,7 +264,20 @@ p.meeting-none {
 
 
 .signup_link{
+    color: #B1A29B;
     font-size: 20px;
+}
+
+#meeting_time_1i, #meeting_time_2i, #meeting_time_3i, #meeting_time_4i, #meeting_time_5i {
+    margin-right: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 

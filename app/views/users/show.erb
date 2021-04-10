@@ -1,9 +1,13 @@
 <div class="container container-fluid">
-    <h2> <%= @current_user.full_name %> </h2>
-    <h4> Username: <%=@current_user.username %></h4>
-    <h4> About Me: </h4>
-    <p> <%= @current_user.bio %></p>
-    <%= button_to 'Edit', edit_user_path(@current_user), :method => :get, class: 'btn button-color user-btn' %>
-    <br>
-    <%= button_to 'Delete Account', { controller: :users, action: :destroy, id: @current_user.id }, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn button-color btn-round user-btn' %>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h2> <%= @current_user.full_name %> </h2>
+            <h4> Username: <%=@current_user.username %></h4>
+            <h4> About Me: </h4>
+            <p> <%= @current_user.bio %></p>
+            <%= button_to 'Edit', edit_user_path(@current_user), :method => :get, class: 'btn button-color user-btn btn-block' %>
+            <br>
+            <%= button_to 'Delete Account', { controller: :users, action: :destroy, id: @current_user.id }, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn button-color btn-round user-btn btn-block' %>
+        </div>
+    </div>
 </div>

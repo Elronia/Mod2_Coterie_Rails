@@ -3,9 +3,7 @@ class RegistrationsController < ApplicationController
     before_action :get_registration, only: [:show, :edit, :update, :destroy]
 
     def new
-        # byebug
-        @meeting_id = flash[:meeting_id]
-        @meeting = Meeting.find(@meeting_id)
+        @meeting = Meeting.find(params[:meeting_id])
         @registration = Registration.new
     end
 
