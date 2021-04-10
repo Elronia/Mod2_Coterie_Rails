@@ -1,9 +1,10 @@
-<h1>Category: <%= @category.name %></h1>
+<div class="container">
+    <h1>Category: <%= @category.name %></h1>
 
-<h2>Sub-Categories</h2>
-<% @category.subcategories.each do |subcategory| %>
-    <p><%= subcategory.name %></p>
-<% end %>
-
+    <h2>Sub-Categories</h2>
+    <% @category.subcategories.each do |subcategory| %>
+        <p class="subcategory-text"><%= subcategory.name %></p>
+    <% end %>
+</div>
 
 

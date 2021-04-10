@@ -1,10 +1,10 @@
 
 <div class="container-fluid">
-<h3> <%= @subcategory.name %> </h3>
+    <h3> <%= @subcategory.name %> </h3>
 
-<ul>
-    <% @meetings.each do |meeting| %>
-        <li> <%= link_to meeting.title, meeting_path(meeting) %> - <%= meeting.datetime %> </li>
-    <% end %>
-</ul>
+    <ul>
+        <% @meetings.each do |meeting| %>
+            <li> <%= link_to meeting.title, meeting_path(meeting) %> - <%= meeting.datetime %> </li>
+        <% end %>
+    </ul>
 </div>

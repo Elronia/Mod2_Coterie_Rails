@@ -2,23 +2,33 @@
     <body>
         <%# <h1 style="text-align:center"> Welcome to Coterie </h1> %>
         <div style="text-align:center;">
-            <img src="https://res.cloudinary.com/elronia/image/upload/v1617921998/Coterie/coterie_banner_2_tgjnyr.jpg" style="width: 100%;"></img>
+            <img src="https://res.cloudinary.com/elronia/image/upload/v1618006920/Coterie/AdobeStock_214482847_Hi_Res_jypfpy.jpg" style="width: 100%;"></img>
         </div>
             
         <div class="col-md-8 col-md-offset-2" style="padding: 50px 0px; margin-bottom: 100px;">
             <h2>🔎 Browse Popular Categories  </h2>
             <div class="row flex" style="width: 100%; height: 200px;">
-                <div class="col-md-3 box art">
-                    <%= link_to 'Arts & Culture', category_path(1) %>
+                <%= link_to category_path(1) do %>
+                    <div class="col-md-3 box-container">
+                        <div class="box art">
+                            <span>Arts & Culture</span>
+                        </div>
+                    </div>
+                <% end %>
+                <div class="col-md-3 box-container">
+                    <div class="box book">
+                        <%= link_to 'Book Clubs', category_path(2) %>
+                    </div>
                 </div>
-                <div class="col-md-3 box book">
-                    <%= link_to 'Book Clubs', category_path(2) %>
+                <div class="col-md-3 box-container">
+                    <div class="box career">
+                        <%= link_to 'Career & Business', category_path(3) %>
+                    </div>
                 </div>
-                <div class="col-md-3 box career">
-                    <%= link_to 'Career & Business', category_path(3) %>
-                </div>
-                <div class="col-md-3 box education">
-                    <%= link_to 'Education & Learning', category_path(4) %>
+                <div class="col-md-3 box-container">
+                    <div class="box education">
+                        <%= link_to 'Education & Learning', category_path(4) %>
+                    </div>
                 </div>
             </div>
             <div class="row flex" style="width: 100%; height: 200px;">

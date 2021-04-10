@@ -9,16 +9,16 @@
         <br>
         <%#= render "users/error"%>
         <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
           <%=f.text_field :username, placeholder: "Enter username", class: "form-control input-lg"%>
         </div>
         <br>
         <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-lock "></i></span>
+          <span class="input-group-addon"><i class="fa fa-lock "></i></span>
           <%=f.password_field :password, placeholder: "Password",class:"form-control input-lg"%>
         </div>
         <br>
-        <%=f.submit "Log in", class: "btn-block btn-primary btn-lg"%>
+        <%=f.submit "Log in", class: "btn-block button-color btn-lg"%>
         <h6 class="signup_link">Not a member? <%=link_to "Sign up", signup_path%></h6>
       <%end%>
     </div>

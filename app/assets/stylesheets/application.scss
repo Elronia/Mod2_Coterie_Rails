@@ -18,6 +18,8 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 h2 {
     font-size: 45px;
@@ -42,15 +44,49 @@ body {
 
 .navbar {
     background-color: #FFF;
+    font-size: 20px;
 }
 
 .navbar-default .navbar-brand {
     color: #000;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .navbar-header {
     font-family: 'Berkshire Swash', cursive;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+
+    li {
+        font-size: 20px;
+    }
+}
+
+.subcategory-text {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button-color {
+    color: brown;
+    border-color: brown;
+    background-color: white
+}
+
+.user-btn {
+    height: 40px;
+    width: 250px;
+}
+
+.height-45 {
+    height: 45px;
+}
+
+p.meeting-none {
+    font-size: 20px;
 }
 
 .box {
@@ -58,6 +94,8 @@ body {
     border-width: 2px;
     font-size: 18px;
     line-height: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     span {
         color: #FFF;
     }
@@ -65,6 +103,11 @@ body {
         color: white;
         font-size: 18px;
     }
+}
+
+.box-container {
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 .art {

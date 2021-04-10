@@ -11,8 +11,8 @@ class MeetingsController < ApplicationController
         #     if meeting.user == @current_user
         #         then list the meeting title & time
         # 2. need to go through a specific meeting to find the attendees of the meeting
-        @meetings = Meeting.all
-        @registrations = @current_user.registrations
+        @meetings = current_user.meetings
+        @registrations = current_user.registrations
     end
     
     def new
