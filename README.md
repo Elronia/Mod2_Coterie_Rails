@@ -62,11 +62,9 @@ The word *Coterie* means a small group of people with shared interests or tastes
 ## Build Status
  * This project was completed in 5 days for the purpose of the project presentation.
 
-## Future Features
- * Improve design elements (look of buttons, background image, text manipulation)
- * Create a logo
+## Future Feature
  * Add About page
- * Utilize API/CSV file for welcome page
+ * Utilize API
  * If a user is a host they can’t be an attendee
  * Allow users to upload a profile picture
  * Add attribute to meeting for url
