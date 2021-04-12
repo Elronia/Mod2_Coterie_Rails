@@ -1,8 +1,10 @@
 <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3 transparent-bg">
     <h1 class="text-center"> Create a Meeting! </h1>
 
     <%= form_for @meeting, class: 'row' do |f| %>
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-12">
         <div class="form-group">
             <%= f.label :subcategory %>
             <%= f.collection_select :subcategory_id, @subcategories, :id, :name, {}, { class: 'form-control'} %>
@@ -23,4 +25,7 @@
     <%= f.submit "Create Meeting", class: 'btn button-color btn-block btn-lg' %>
     </div>
     <% end %>
+    </div>
+    </div>
+    </div>
 </div>

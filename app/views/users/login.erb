@@ -1,9 +1,10 @@
-<% if @error %>
-<p><%= @error %></p>
-<% end %>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4 transparent-bg">
+    <% if @error %>
+    <p><%= @error %></p>
+    <% end %>
 
-<div class="row" id="form">
-    <div class="col-md-4 col-md-offset-4">
+    <div id="form">
       <%= form_for(:user, url: handle_login_path) do |f|%>
         <h1 class= "welcome">Welcome Back!</h1>
         <br>
@@ -23,3 +24,4 @@
       <%end%>
     </div>
   </div>
+</div>

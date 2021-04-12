@@ -94,6 +94,23 @@ ul {
     }
 }
 
+.registration-form-new {
+    font-size: 18px;
+
+    .btn {
+        font-size: 18px;
+    }
+}
+
+.transparent-bg {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+
+    h1 {
+        margin-top: 0px;
+    }
+}
+
 .height-45 {
     height: 45px;
 }
