@@ -3,11 +3,11 @@
     <br><br>
     <%= form_tag("/meetings/new/form", :method => "get", class: 'row', id: 'new_meeting') do %>
         <div class="col-md-6 col-md-offset-3">
-        <div class="form-group">
-            <%= label_tag :category %>
-            <%= select_tag(:category_id, options_for_select(@categories.map {|category| category.name}), { class: 'form-control' }) %><br>
-        </div>
-        <%= submit_tag("Next", class: 'btn btn-block button-color btn-lg')%>
+            <div class="form-group">
+                <%= label_tag :category %>
+                <%= select_tag(:category_id, options_for_select(@categories.map {|category| category.name}), { class: 'form-control' }) %><br>
+            </div>
+            <%= submit_tag("Next", class: 'btn btn-block button-color btn-lg')%>
         </div>
     <% end %>
 </div>
