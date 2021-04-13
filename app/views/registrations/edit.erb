@@ -1,8 +1,14 @@
-<h1> This is your registration! </h1>
+<div class="container container-fluid meeting-show">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 transparent-bg">
+            <h1> This is your registration! </h1>
 
-<p> Title: <%= @registration.meeting.title %> </p>
-<p> When? <%= @registration.meeting.datetime %> </p>
-<p> Host: <%= link_to @registration.meeting.user.full_name, profile_path(@registration.meeting.user.id) %> </p>
-<p> <%= @registration.meeting.description %> </p>
+            <p> Title: <%= @registration.meeting.title %> </p>
+            <p> When? <%= @registration.meeting.datetime %> </p>
+            <p> Host: <%= link_to @registration.meeting.user.full_name, profile_path(@registration.meeting.user.id) %> </p>
+            <p> <%= @registration.meeting.description %> </p>
 
-<%= button_to 'Cancel My Registration 😭', { controller: :registrations, action: :destroy, id: @registration.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= button_to 'Cancel My Registration', { controller: :registrations, action: :destroy, id: @registration.id }, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn button-color btn-round user-btn btn-block' %>
+        </div>
+    </div>
+</div>
