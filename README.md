@@ -1,6 +1,7 @@
 # Coterie
 Coterie is a web application that allows users to join and host virtual meetings to connect people with shared interests.
-The inspiration of this app came during the time of COVID where it was difficult for people to gather in-person. Coterie provides a safe space to still meet new people and stay connected. The word *Coterie* means a small group of people with shared interests or tastes.
+The inspiration of this app came during the time of COVID where it was difficult for people to gather in-person. Coterie provides a safe space to still meet new people and stay connected. 
+The word *Coterie* means a small group of people with shared interests or tastes.
 
 ## Getting started
 1. Clone down this repo onto your local machine --git clone
@@ -62,21 +63,14 @@ The inspiration of this app came during the time of COVID where it was difficult
  * This project was completed in 5 days for the purpose of the project presentation.
 
 ## Future Feature
- * Add About page
  * Utilize API
  * If a user is a host they can’t be an attendee
  * Allow users to upload a profile picture
  * Add attribute to meeting for url
 
 ## Contributors
- * [Anna Kim](https://github.com/iannakim)
  * [Ekaterina Zarudnaya](https://github.com/Elronia)
+ * [Anna Kim](https://github.com/iannakim)
  * [Waverley Leung](https://github.com/wlcreate)
  
-## Acknowledgements
- We would like to thank:
-  * Sylwia Vargas
-  * Eric Kim
-  * Annie Zheng
-  * Isabel K. Lee
-  * the Code Bender Cohort
+
