@@ -4,6 +4,7 @@ class Meeting < ApplicationRecord
   belongs_to :user #hosts
   has_many :registrations, dependent: :destroy
   has_many :users, through: :registrations, dependent: :destroy #attendees
+  validates_presence_of :title
 
 
   def datetime

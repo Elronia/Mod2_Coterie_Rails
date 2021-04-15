@@ -3,14 +3,6 @@ class MeetingsController < ApplicationController
     before_action :get_meeting, only: [:show, :edit, :update, :destroy]
 
     def index
-        # meeting.user = host
-        # meeting.users = attendees
-
-        # 1. need to go through a specific meeting to find the host of the meeting
-        #     we map over all the meetings
-        #     if meeting.user == @current_user
-        #         then list the meeting title & time
-        # 2. need to go through a specific meeting to find the attendees of the meeting
         @meetings = current_user.meetings
         @registrations = current_user.registrations
     end
@@ -27,22 +19,14 @@ class MeetingsController < ApplicationController
     end
 
     def create
-        # byebug
-        subcategory_id = params[:meeting][:subcategory_id].to_i
-        @subcategory = Subcategory.find(subcategory_id)
-        @category = @subcategory.category
-        @description = params[:meeting][:description]
-        @title = params[:meeting][:title]
-
-        year = params[:meeting]["time(1i)"].to_i
-        month = params[:meeting]["time(2i)"].to_i
-        day = params[:meeting]["time(3i)"].to_i
-        hour = params[:meeting]["time(4i)"].to_i
-        minute = params[:meeting]["time(5i)"].to_i
-        @time = DateTime.new(year, month, day, hour, minute)
-        @meeting = Meeting.create(title: @title, description: @description, time: @time, subcategory: @subcategory, category: @category, user: @current_user)
-        
-        redirect_to meeting_path(@meeting)
+        meeting = Meeting.new(meeting_params.merge(user: current_user))
+        meeting.category = meeting.subcategory.category
+        if meeting.save
+            redirect_to meeting_path(meeting)
+        else
+            flash[:danger] = meeting.errors.full_messages.to_sentence
+            redirect_to new_meeting_path
+        end
     end
 
     def show
@@ -71,7 +55,7 @@ class MeetingsController < ApplicationController
     end
 
     def meeting_params
-        params.require(:meeting).permit(:title, :description, :time, :category, :subcategory)
+        params.require(:meeting).permit(:title, :description, :time, :category, :subcategory_id)
     end
 
 end
