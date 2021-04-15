@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "welcome#home" 
   # get "welcome/home", to: "welcome#home", as: "home"
 
+  get "/about", to: "static_pages#about", as: "about"
   #users  
   get "/login", to: "users#login", as: "login"
   get '/signup', to: "users#new", as: "signup" #form to create a user

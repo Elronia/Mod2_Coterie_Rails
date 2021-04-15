@@ -17,7 +17,7 @@
           <a class="navbar-brand" href="/">coterie</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">About</a></li>
+          <li class="active"><a href="/about">About</a></li>
           <% if check_if_user_is_logged_in %>
             <li><a href="/users/<%= current_user.id %>">Profile</a></li>
             <li><a href="/users/<%= current_user.id %>/meetings">My Meetings</a></li>

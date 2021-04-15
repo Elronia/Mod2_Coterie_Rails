@@ -7,22 +7,22 @@
         <div class="col-md-12">
         <div class="form-group">
             <%= f.label :subcategory %>
-            <%= f.collection_select :subcategory_id, @subcategories, :id, :name, {}, { class: 'form-control'} %>
+            <%= f.collection_select :subcategory_id, @subcategories, :id, :name, {}, { class: 'form-control ft-sz-18'} %>
         </div>
         <div class="form-group">
             <%= f.label :title %>
-            <%= f.text_field :title, class: 'form-control' %>
+            <%= f.text_field :title, class: 'form-control ft-sz-18' %>
         </div>
         <div class="form-group">
             <%= f.label :description %>
-            <%= f.text_area :description, class: 'form-control' %>
+            <%= f.text_area :description, class: 'form-control ft-sz-18' %>
         </div>
         <div class="input-group">
             <%= f.label :time %><br>
             <%= f.datetime_select(:time, { :default => { :hour => 23, :minute => 59 } }) %>
         </div>
         <br>
-    <%= f.submit "Create Meeting", class: 'btn button-color btn-block btn-lg' %>
+    <%= f.submit "Create Meeting", class: 'btn button-color btn-block btn-lg ft-sz-18' %>
     </div>
     <% end %>
     </div>

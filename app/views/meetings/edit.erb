@@ -18,10 +18,10 @@
                             <%= f.datetime_select(:time, :default => { :hour => 23, :minute => 59 }) %><br>
                         </div>
                     </div>
-                    <%= f.submit "Update Meeting", class: "btn button-color btn-round user-btn btn-block"%>
+                    <%= f.submit "Update Meeting", class: "ft-sz-18 btn button-color btn-round user-btn btn-block"%>
                 <% end %>
             <br>
-            <%= button_to 'Delete Meeting', { controller: :meetings, action: :destroy, id: @meeting.id }, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn button-color btn-round user-btn btn-block' %>
+            <%= button_to 'Delete Meeting', { controller: :meetings, action: :destroy, id: @meeting.id }, method: :delete, data: { confirm: 'Are you sure?' }, class: 'ft-sz-18 btn button-color btn-round user-btn btn-block' %>
         </div>
     </div>
 </div>    

@@ -3,13 +3,13 @@
         <div class="col-md-6 col-md-offset-3 transparent-bg">
             <h1 class="text-center"> Before we get started, please select a category!</h1>
             <br><br>
-            <%= form_tag("/meetings/new/form", :method => "get", id: 'new_meeting') do %>
+            <%= form_tag("/meetings/new/form", :method => "get", id: 'ft-sz-18') do %>
                     <%= render 'layouts/messages' %>
                     <div class="form-group">
                         <%= label_tag :category %>
-                        <%= select_tag(:category_id, options_for_select(@categories.map {|category| category.name}), { class: 'form-control' }) %><br>
+                        <%= select_tag(:category_id, options_for_select(@categories.map {|category| category.name}), { class: 'form-control ft-sz-18' }) %><br>
                     </div>
-                    <%= submit_tag("Next", class: 'btn btn-block button-color btn-lg')%>
+                    <%= submit_tag("Next", class: 'btn btn-block button-color btn-lg ft-sz-18')%>
             <% end %>
         </div>
     </div>

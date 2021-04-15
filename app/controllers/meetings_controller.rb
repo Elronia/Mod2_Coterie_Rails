@@ -31,7 +31,7 @@ class MeetingsController < ApplicationController
 
     def show
         # byebug
-        flash[:meeting_id] = params[:id]
+
     end
 
     def edit
