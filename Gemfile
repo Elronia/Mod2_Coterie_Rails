@@ -28,6 +28,7 @@ gem 'activerecord-reset-pk-sequence'
 gem 'font-awesome-sass', '~> 5.15.1'
 
 # Use Active Storage variant
+gem 'mimemagic', '~> 0.3.8'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
