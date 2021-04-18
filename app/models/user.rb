@@ -2,7 +2,7 @@ class User < ApplicationRecord
     has_many :meetings, dependent: :destroy #this is the host
     has_many :registrations
     has_many :meetings, through: :registrations, dependent: :destroy #this is the attendee
-
+    has_one_attached :profile_picture
     has_secure_password
 
    PASSWORD_REQUIREMENTS = /\A 

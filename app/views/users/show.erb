@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 transparent-bg">
             <h2> <%= @current_user.full_name %> </h2>
+            <%= image_tag @current_user.profile_picture, width: 200 %>
             <h4> Username: <%=@current_user.username %></h4>
             <h4> About Me: <%= @current_user.bio %></h4>
             <%= button_to 'Edit', edit_user_path(@current_user), :method => :get, class: 'btn button-color user-btn btn-block ft-sz-18' %>
