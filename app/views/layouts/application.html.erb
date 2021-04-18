@@ -17,25 +17,25 @@
           <a class="navbar-brand" href="/">coterie</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/about">About</a></li>
+          <li class="<%= active_class('/about') %>"><a href="/about">About</a></li>
           <% if check_if_user_is_logged_in %>
-            <li><a href="/users/<%= current_user.id %>">Profile</a></li>
-            <li><a href="/users/<%= current_user.id %>/meetings">My Meetings</a></li>
+            <li class=<%= active_class("/users/#{current_user.id}") %>><a href="/users/<%= current_user.id %>">Profile</a></li>
+            <li class=<%= active_class("/users/#{current_user.id}/meetings") %>><a href="/users/<%= current_user.id %>/meetings">My Meetings</a></li>
           <% end %>
-          <li><a href="/categories">Register for a Meeting</a></li>
-          <li><a href="/meetings/new">Host a Meeting</a></li>
+          <li class=<%= active_class("/categories") %>><a href="/categories">Register for a Meeting</a></li>
+          <li class=<%= active_class("/meetings/new") %>><a href="/meetings/new">Host a Meeting</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
               <% if check_if_user_is_logged_in %>
-              <li>
+              <li class=<%= active_class(logout_path) %>>
                 <%# Logged In as: <%= @current_user.full_name %>
                 <%= link_to "Log Out", logout_path, method: :delete%>
               </li>
               <% else %>
-              <li>
+              <li class=<%= active_class('/signup') %>>
                 <%= link_to "Sign Up", '/signup' %>
               </li>
-              <li>
+              <li class=<%= active_class(login_path) %>>
                 <%= link_to "Log-In", login_path %>
               </li>
               <% end %>
