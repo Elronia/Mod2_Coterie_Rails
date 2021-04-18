@@ -3,18 +3,18 @@
         <div class="col-md-6 col-md-offset-3 transparent-bg">
             <h1 class="text-center"> Edit a Meeting! </h1>
                 <%= form_for([@meeting.user, @meeting]) do |f| %>
-                    <div class="col-md-12 m-b-20">
+                    <div class="col-md-12 m-b-20 ft-sz-18">
                         <div class="form-group">
                             <%= f.hidden_field :user_id, :value => @current_user.id %>
                             <%= f.label :title %>
-                            <%= f.text_field :title, class: 'form-control' %>
+                            <%= f.text_field :title, class: 'form-control ft-sz-18' %>
                         </div>
                         <div class="form-group">
                             <%= f.label :description %>
-                            <%= f.text_area :description, class: 'form-control' %>
+                            <%= f.text_area :description, class: 'form-control ft-sz-18' %>
                         </div>
                         <div class="input-group">
-                            <%= f.label :time %>
+                            <%= f.label :time %><br>
                             <%= f.datetime_select(:time, :default => { :hour => 23, :minute => 59 }) %><br>
                         </div>
                     </div>
