@@ -7,7 +7,7 @@ The word *Coterie* means a small group of people with shared interests or tastes
 
 ## Getting started
 1. Clone down this repo onto your local machine --git clone
-2. cd into 'Mod2_Coterie_Rails' application
+2. cd into *Mod2_Coterie_Rails* application
 3. Run ```bundle install``` to install all required dependencies
 4. Run ```rails db:migrate``` to set up the tables for the database
 5. Run ```rails db:seed``` load data
