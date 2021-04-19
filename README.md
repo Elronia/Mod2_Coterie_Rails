@@ -7,7 +7,7 @@ The word *Coterie* means a small group of people with shared interests or tastes
 
 ## Getting started
 1. Clone down this repo onto your local machine --git clone
-2. cd into 'Coterie' application
+2. cd into 'Mod2_Coterie_Rails' application
 3. Run ```bundle install``` to install all required dependencies
 4. Run ```rails db:migrate``` to set up the tables for the database
 5. Run ```rails db:seed``` load data
@@ -57,17 +57,23 @@ The word *Coterie* means a small group of people with shared interests or tastes
  * Active Record
 
 ## Tools
- * Bootstrap
  * BCrypt
+ * Bootstrap
  * Custom CSS
 
 ## Build Status
  * This project was completed in 5 days for the purpose of the project presentation.
 
+## Following Features were added later
+ * Changed the banner and styling for the home page
+ * Styled all the buttons and the forms throughout the application
+ * Added font awesome gem and used icons for the forms
+ * Allowed users to upload a profile picture from outside files
+ * Added some validations
+
 ## Future Feature
  * Utilize API
  * If a user is a host they can’t be an attendee
- * Allow users to upload a profile picture
  * Add attribute to meeting for url
 
 ## Contributors
