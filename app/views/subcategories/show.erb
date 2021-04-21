@@ -1,10 +1,14 @@
 
 <div class="container container-fluid">
     <h3> <%= @subcategory.name %> </h3>
-
-    <ul>
-        <% @meetings.each do |meeting| %>
-            <li> <%= link_to meeting.title, meeting_path(meeting) %> - <%= meeting.datetime %> </li>
-        <% end %>
-    </ul>
+    <% if @meetings.count.zero? %> 
+    <br>
+        <h5 class="ft-sz-18">Currently you don't have any meetings.</h5>
+    <% else %>
+        <ul>
+            <% @meetings.each do |meeting| %>
+                <li> <%= link_to meeting.title, meeting_path(meeting) %> - <%= meeting.datetime %> </li>
+            <% end %>
+        </ul>
+    <% end %>
 </div>
