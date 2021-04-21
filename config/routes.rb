@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/users/:id/edit', to: "users#edit", as: "edit_user" #editing individual profile
   patch '/users/:id', to: "users#update" #actually edits/updates info
   delete '/users/:id', to: "users#destroy" #deletes user account
+  delete '/users/:id/delete_image', to: 'users#delete_image', as: 'delete_image' #deletes the user's profile picture
   delete 'logout', to: "users#logout", as: "logout"
   get '/user/:id/profile', to: "users#profile", as: "profile"
   

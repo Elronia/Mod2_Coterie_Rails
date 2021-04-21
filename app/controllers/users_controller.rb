@@ -72,6 +72,11 @@ class UsersController < ApplicationController
         redirect_to home_path
     end
 
+    def delete_image
+        current_user.profile_picture.destroy
+        redirect_to current_user
+    end
+
     private
 
     def user_params

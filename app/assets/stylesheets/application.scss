@@ -125,6 +125,16 @@ p.meeting-none {
     }
 }
 
+.image-container {
+    position: relative;
+    min-height: 250px;
+}
+
+#user-profile-picture-form-container {
+    position: absolute;
+    bottom: 0;
+}
+
 .box-container {
     padding-left: 1px;
     padding-right: 1px;

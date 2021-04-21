@@ -2,9 +2,23 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 transparent-bg">
             <h2> <%= @current_user.full_name %> </h2>
-            <% if @current_user.profile_picture.attached? %>
-                <%= image_tag @current_user.profile_picture, width: 200 %>
-            <% end %>
+                <div class="row">
+                    <div class="col-md-6">
+                        <% if @current_user.profile_picture.attached? %>
+                            <%= image_tag @current_user.profile_picture, width: 200 %>
+                        <% else %>
+                            <%= image_tag 'user-icon.jpeg', width: 200 %>
+                        <% end %>
+                    </div>
+                    <div class="col-md-6 image-container">
+                        <% if @current_user.profile_picture.attached? %>
+                        <div id="user-profile-picture-form-container">
+                            <%= button_to "Delete Your Picture", delete_image_path(current_user), class: 'btn button-color user-btn btn-block ft-sz-18', :method => :delete %>
+                        </div>
+                        <% end %>
+                    </div>
+                </div>
+
             <h4> Username: <%=@current_user.username %></h4>
             <h4> About Me: <%= @current_user.bio %></h4>
             <%= button_to 'Edit', edit_user_path(@current_user), :method => :get, class: 'btn button-color user-btn btn-block ft-sz-18' %>
