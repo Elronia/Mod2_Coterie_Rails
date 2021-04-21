@@ -4,7 +4,7 @@
             <h2><strong><%= @meeting.title %> </strong> </h2>
             <p><strong>Category: </strong><%= @meeting.category.name %></p>
             <p><strong>Subcategory: </strong><%= @meeting.subcategory.name %></p>
-            <p><strong>When?</strong> <%= @meeting.datetime%></p>
+            <p><strong>When:</strong> <%= @meeting.datetime%></p>
             <p><strong>Number of Attendees: </strong> <%= @meeting.users.count %></p>
 
             <p> <strong> Host: </strong> <%= link_to @meeting.user.full_name, profile_path(@meeting.user.id) %> </p>
