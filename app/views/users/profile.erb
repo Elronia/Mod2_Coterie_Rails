@@ -1,6 +1,8 @@
-<div class="container-fluid">
-<h2> <%= @user.full_name %> </h2>
-<h3> Username: <%=@user.username %></h3>
-<h3> About Me: </h3>
-<p> <%= @user.bio %></p>
+<div class="container container-fluid">
+    <div class="col-md-8 col-md-offset-2 transparent-bg">
+        <h2> <%= @user.full_name %> </h2>
+        <h3> Username: <%=@user.username %></h3>
+        <h3> About Me: </h3>
+        <p class="ft-sz-18"> <%= @user.bio %></p>
+    </div>
 </div>
