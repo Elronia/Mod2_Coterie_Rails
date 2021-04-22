@@ -53,8 +53,9 @@ The word *Coterie* means a small group of people with shared interests or tastes
 ## Tech Stack
  * Ruby on Rails
  * PostgreSQL
- * HTML/CSS
  * Active Record
+ * Active Storage
+ * HTML/CSS
 
 ## Tools
  * BCrypt
@@ -65,15 +66,15 @@ The word *Coterie* means a small group of people with shared interests or tastes
  * This project was completed in 5 days for the purpose of the project presentation.
 
 ## Following Features were added later
+ * Allowed users to upload a profile picture from outside files and delete it
+ * Added some validations
+    * Added a new validation allowing the user to be a host but not an attendee
  * Changed the banner and styling for the home page
  * Styled all the buttons and the forms throughout the application
  * Added font awesome gem and used icons for the forms
- * Allowed users to upload a profile picture from outside files
- * Added some validations
 
 ## Future Feature
  * Utilize API
- * If a user is a host they can’t be an attendee
  * Add attribute to meeting for url
 
 ## Contributors
